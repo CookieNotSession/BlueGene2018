@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>警察先生!就是他!</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="http://140.113.73.212/test2/intelligencefinal/assets/css/main.css" />
+
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
+
+
+	</head>
+	<body class="landing">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>警察先生!就是他!</h2>
+							<p>隨拍隨傳<br />
+							利用Neural Network<br />
+							檢測他 是不是在想色色的事情</a>!</p>
+							<ul class="actions">
+								<li><a href="http://www.hccp.gov.tw/hccp/ch/index.jsp" class="button special">Help Me!</a></li>
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly">快來測試!</a>
+					</section>
+<html>
+<head>
+<title>Upload</title>
+ <script src="http://140.113.73.212/test2/intelligencefinal/assets/js/jquery.min.js"></script>
+</head>
+<body>
+
+
+<script>
+    $("#file-picker").change(function(){
+        var input = document.getElementById('file-picker');
+        for (var i=0; i<input.files.length; i++)
+        {
+        //koala.jpg, koala.JPG substring(index) lastIndexOf('a') koala.1.jpg
+            var ext= input.files[i].name.substring(input.files[i].name.lastIndexOf('.')+1).toLowerCase()
+            if ((ext != ''))
+            {
+                $("#msg").text("Files are supported")
+            }
+            else
+            {
+                $("#msg").text("Files are NOT supported")
+                document.getElementById("file-picker").value ="";
+            }
+        }
+    } );
+</script>
+</html>
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<table width="300" height="80">
+　<tr><td align="center">
+
+		<form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+			<h2>Take A Photo or Upload image</h2><br>
+<div class="upload-btn-wrapper">
+  <button class="btn button special" style="color:white black;height: 71.97728000000001px; adding-top: 6px;">Upload a file</button>
+  <input id="file-picker" type="file" name="file" accept="image/*" multiple style="width: 100%;">
+</div>
+
+
+    <div id="msg"></div>
+    <input type="submit" value="Upload!" id="upload-button" style="
+    width: 250.4px;
+    height: 75px;
+">
+</form>
+	</body>
+</td></tr>
+</table>
+				
+
+			
+
+				
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Algorithm : <a href="http://scikit-learn.org/stable/modules/neural_networks_supervised.html">Multi-layer Perceptron</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="http://140.113.73.212/test2/intelligencefinal/assets/js/jquery.min.js"></script>
+			<script src="http://140.113.73.212/test2/intelligencefinal/assets/js/jquery.scrollex.min.js"></script>
+			<script src="http://140.113.73.212/test2/intelligencefinal/assets/js/jquery.scrolly.min.js"></script>
+			<script src="http://140.113.73.212/test2/intelligencefinal/assets/js/skel.min.js"></script>
+			<script src="http://140.113.73.212/test2/intelligencefinal/assets//js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="http://140.113.73.212/test2/intelligencefinal/assets/js/main.js"></script>
+
+	</body>
+</html>
+
