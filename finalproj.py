@@ -125,7 +125,7 @@ def upload():
         upload.save(destination)
         print('zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz')
         fetchface(filename,dirname)
-        testans=aaornonaa('C:\\Users\\admin\\Desktop\\智慧型\\finalproject\\upload_file_python\\images\\'+dirname+'\\face'+filename)
+        testans=aaornonaa('finalproject\\upload_file_python\\images\\'+dirname+'\\face'+filename)
         print("testing result:",testans)
         print('zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz')
         showpic=''
