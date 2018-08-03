@@ -44,7 +44,7 @@ os.chdir('..')
 
 
 ---
-def resize(img): #Resize the original pic to 30X30 pixel 
+def resize(img): #Resize the original pic to 30X30 pixel
     im = Image.open(img)
     width = 30
     height = 30
@@ -67,7 +67,7 @@ def aaornonaa(img):
     return y2
 
 def fetchface(IMG,dirn):
-    os.chdir('finalproject\\upload_file_python\\images\\'+dirn)
+    os.chdir('finalproject\\upload_file_python\\images\\'+dirn) # your path
     image = face_recognition.load_image_file("finalproject\\upload_file_python\\images\\"+dirn+"\\"+IMG) #testing pic
 
     if(len(face_recognition.face_locations(image))):
