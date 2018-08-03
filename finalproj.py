@@ -44,7 +44,7 @@ os.chdir('..')
 
 
 ---
-def resize(img): #Resize the original pic
+def resize(img): #Resize the original pic to 30X30 pixel 
     im = Image.open(img)
     width = 30
     height = 30
