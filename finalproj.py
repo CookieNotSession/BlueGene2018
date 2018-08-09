@@ -5,7 +5,7 @@ Created on Mon Dec 11 21:26:56 2017
 
 @author: cookiehiker
 """
-
+#Using MLP to get face 
 import os
 from flask import Flask, request, render_template, send_from_directory
 from sklearn.neural_network import MLPClassifier
