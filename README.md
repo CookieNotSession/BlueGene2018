@@ -1,6 +1,7 @@
 # BlueGene2018
 
-digraph G {
+![Alt text](https://g.gravizo.com/svg?
+  digraph G {
     aize ="4,4";
     main [shape=box];
     main -> parse [weight=8];
@@ -15,3 +16,4 @@ digraph G {
     node [shape=box,style=filled,color=".7 .3 1.0"];
     execute -> compare;
   }
+)
